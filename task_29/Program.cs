@@ -3,9 +3,25 @@
 // 6, 1, 33 -> [6, 1, 33]
 
 
-int DataEntry(string str)
+int[] EnterArr(int num)
 {
-    Console.Write(str);
-    int number  = int.Parse(Console.ReadLine());
-    return number;
+    int[] arr = new int[num];
+    for(int i = 0; i < num; i++)
+    {
+        arr[i] = new Random().Next(100);
+    }
+    return arr;
 }
+
+void PrintArr(int[] arr)
+{
+    for (int i = 0; i < arr.Length; i++)
+    {
+        Console.Write(arr[i] + " ");
+    }
+    Console.WriteLine();
+}
+
+Console.Clear();
+int[] randomArr = EnterArr(8);
+PrintArr(randomArr);
