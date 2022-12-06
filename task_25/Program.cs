@@ -10,8 +10,12 @@ int DataEntry(string str)
 }
 
 double Exponentiate(int a, int b)
-{
-    double result = Math.Pow(a, b);
+{   
+    int result = 1;
+    for (int i = 0; i < b; i++)
+    {
+        result *= a;
+    }
     return result;
 }
 
