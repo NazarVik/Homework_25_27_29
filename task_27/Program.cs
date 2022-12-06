@@ -1,4 +1,5 @@
-﻿// Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
+﻿// Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в 
+// числе.
 // 452 -> 11
 // 82 -> 10
 // 9012 -> 12
@@ -13,8 +14,7 @@ int DataEntry(string str)
 int SumOfNumbers(int num)
 {
     int result = 0;
-    int length = num.ToString().Length;
-    for(int i =0; i < length; i++)
+    while(num > 0)
     {
         result += num % 10;
         num = num / 10;        
